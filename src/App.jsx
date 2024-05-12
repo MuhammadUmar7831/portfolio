@@ -27,7 +27,7 @@ function App() {
             border: "3px solid white",
           }}
         /> */}
-        <div className="theme-bg Montserrat text-white p-0 m-0">
+        <div className="theme-bg Montserrat text-white p-0 m-0 overflow-x-hidden">
           <Navbar />
           <ProfComponent />
           <Technologies />
