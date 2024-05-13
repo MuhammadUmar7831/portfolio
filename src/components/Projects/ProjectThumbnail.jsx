@@ -1,14 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { FiExternalLink, FiGithub } from "react-icons/fi";
 import ProjectDetails from "./ProjectDetails";
 
 const ProjectThumbnail = ({ imageSrc, title, description, details }) => {
   const [detailVisible, setDetailVisible] = useState(false);
   const [isHover, setIsHover] = useState(false);
-
-  useEffect(() => {
-    console.log(details);
-  }, []);
 
   const handleMouseEnter = () => {
     setIsHover(true);

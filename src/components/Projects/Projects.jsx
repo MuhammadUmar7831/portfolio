@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import ProjectThumbnail from "./ProjectThumbnail";
-import {details, projects} from "../../services/projectService";
+import { details, projects } from "../../services/projectService";
+import { RefContext } from "../../context/RefContext";
 
 const Projects = () => {
+  const { projectsRef } = useContext(RefContext);
   return (
     <>
-      <div className="p-4">
+      <div className="p-4" ref={projectsRef}>
         <h1 className="text-3xl text-center mt-4 mb-10">
           My <span className="txt-color">Projects</span>
         </h1>
@@ -16,7 +18,7 @@ const Projects = () => {
               imageSrc={project.imageSrc}
               title={project.title}
               description={project.description}
-              details={details[project.id-1]}
+              details={details[project.id - 1]}
             />
           ))}
         </div>

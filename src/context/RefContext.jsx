@@ -7,10 +7,11 @@ const RefProvider = (props) => {
 
     const profileRef = useRef(null);
     const technologiesRef = useRef(null);
+    const projectsRef = useRef(null);
     const contactRef = useRef(null);
   
     return (
-    <RefContext.Provider value={{ profileRef, technologiesRef, contactRef }}>
+    <RefContext.Provider value={{ profileRef, technologiesRef, projectsRef, contactRef }}>
       {props.children}
     </RefContext.Provider>
   );

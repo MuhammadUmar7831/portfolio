@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 export default function MenuOverlay(props){
     const [isVisible, setIsVisible] = useState(false);
 
-    const { onClose, handleProfileClick, handleTechnologiesClick, handleContactClick } = props;
+    const { onClose, handleProfileClick, handleTechnologiesClick, handleProjectsClick, handleContactClick } = props;
 
     useEffect(() => {
         const timeoutId = setTimeout(() => {
@@ -19,6 +19,7 @@ export default function MenuOverlay(props){
                 <nav className="flex flex-col space-y-4 text-center Montserrat">
                     <button onClick={handleProfileClick} className="hover:text-gray-300">Profile</button>
                     <button onClick={handleTechnologiesClick} className="hover:text-gray-300">Technologies</button>
+                    <button onClick={handleProjectsClick} className="hover:text-gray-300">Projects</button>
                     <button onClick={handleContactClick} className="hover:text-gray-300">Contact</button>
                 </nav>
             </div>
