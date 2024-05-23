@@ -1,8 +1,9 @@
 import React, { useContext } from "react";
 import { RefContext } from "../context/RefContext";
 import { FaLinkedinIn } from "react-icons/fa";
-import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
-import { Slide } from "react-awesome-reveal";
+import { AiFillGithub } from "react-icons/ai";
+import { Slide, Zoom } from "react-awesome-reveal";
+import TypeIt from "typeit-react";
 
 const ProfComponent = () => {
   const { profileRef } = useContext(RefContext);
@@ -20,7 +21,14 @@ const ProfComponent = () => {
                 Hello <span className="txt-color">I'am</span>
               </h4>
               <h1 className="text-3xl font-semibold txt-color">
-                Muhammad Umar
+                <TypeIt
+                  options={{
+                    strings: ["Muhammad Umar"],
+                    speed: 200,
+                    waitUntilVisible: true,
+                    loop: true
+                  }}
+                />
               </h1>
               <h3>Web Developer</h3>
               <p>
@@ -58,7 +66,7 @@ const ProfComponent = () => {
             </div>
           </div>
         </Slide>
-        <Slide direction="right">
+        <Zoom>
           <div className="flex-1 transition-transform duration-700 ease-in">
             <img
               src="/images/bannerUser.png"
@@ -66,7 +74,7 @@ const ProfComponent = () => {
               className="w-full rounded-md shadow-md hover:shadow-lg"
             />
           </div>
-        </Slide>
+        </Zoom>
       </div>
     </div>
   );

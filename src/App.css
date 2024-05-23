@@ -12,7 +12,7 @@
 }
 
 .txt-color {
-  @apply text-teal-500
+  @apply text-teal-500 dark:text-slate-500
 }
 
 .dark-theme {
