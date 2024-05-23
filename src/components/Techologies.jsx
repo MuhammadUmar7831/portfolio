@@ -8,7 +8,7 @@ const Technologies = () => {
 
   return (
     <div
-      className="py-12 px-4 w-full theme-bg-darker"
+      className="py-12 px-4 w-full bg-teal-700 dark:bg-slate-700"
       ref={technologiesRef}
     >
       <div className="font-semibold">
@@ -20,8 +20,8 @@ const Technologies = () => {
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-8">
         {technologies.map((tech, index) => (
           <Slide key={index} direction="left">
-            <div className="bg-gray-800 py-4 px-6 rounded-md flex flex-col items-center justify-center overflow-hidden transform transition-transform duration-500 hover:scale-105">
-              <div className="relative w-20 h-20 overflow-hidden">
+            <div className="bg-teal-800 dark:bg-slate-800 py-4 px-6 rounded-md flex flex-col items-center justify-center overflow-hidden transform transition-transform duration-500 hover:scale-105">
+              <div className="relative w-10 h-10 overflow-hidden">
                 <img
                   src={tech.image}
                   alt={tech.name}

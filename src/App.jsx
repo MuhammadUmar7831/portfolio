@@ -10,6 +10,7 @@ import AnimatedCursor from "react-animated-cursor";
 import "./App.css";
 
 function App() {
+  const [darkMode, setDarkMode] = useState(false);
   return (
     <>
       <RefProvider>
@@ -27,11 +28,15 @@ function App() {
             border: "3px solid white",
           }}
         /> */}
-        <div className="theme-bg Montserrat text-white p-0 m-0 overflow-x-hidden">
-          <Navbar />
+        <div
+          className={`Montserrat p-0 m-0 overflow-x-hidden ${
+            darkMode ? "dark dark-theme" : "light-theme"
+          }`}
+        >
+          <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
           <ProfComponent />
           <Technologies />
-          <Projects/>
+          <Projects />
           <Contact />
         </div>
       </RefProvider>

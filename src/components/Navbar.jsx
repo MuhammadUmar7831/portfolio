@@ -1,9 +1,11 @@
 import React, { useState, useContext } from "react";
-import { GiCandleFlame } from "react-icons/gi";
+import { IoMdMoon } from "react-icons/io";
+import { LuSun } from "react-icons/lu";
 import MenuOverlay from "./MenuOverlay";
 import { RefContext } from "../context/RefContext";
 
 export default function Navbar(props) {
+  const { darkMode, setDarkMode } = props;
   const [isOpen, setIsOpen] = useState(false);
   const { profileRef, technologiesRef, projectsRef, contactRef } =
     useContext(RefContext);
@@ -28,43 +30,51 @@ export default function Navbar(props) {
     setIsOpen(false);
   };
 
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+  };
+
   return (
-    <div className="py-6">
+    <div className="bg-gradient-to-r from-teal-800 to-teal-500 dark:bg-gradient-to-r dark:from-slate-800 dark:to-slate-500 shadow-md py-6">
       <div className="max-w-7xl mx-auto flex justify-between items-center px-4">
-        <div className="flex items-center">
-          <span className="txt-color text-3xl">
-            <GiCandleFlame />
-          </span>
+        {/* <div className="flex items-center">
           <h1 className="font-bold text-2xl ml-2 Montserrat">Muhammad Umar</h1>
-        </div>
+        </div> */}
         <div className="hidden md:flex">
           <nav className="space-x-4 Montserrat">
             <button
               onClick={handleProfileClick}
-              className="hover:text-gray-300"
+              className="hover:text-emerald-200 dark:hover:text-gray-300"
             >
               Profile
             </button>
             <button
               onClick={handleTechnologiesClick}
-              className="hover:text-gray-300"
+              className="hover:text-emerald-200 dark:hover:text-gray-300"
             >
               Technologies
             </button>
             <button
               onClick={handleProjectsClick}
-              className="hover:text-gray-300"
+              className="hover:text-emerald-200 dark:hover:text-gray-300"
             >
               Projects
             </button>
             <button
               onClick={handleContactClick}
-              className="hover:text-gray-300"
+              className="hover:text-emerald-200 dark:hover:text-gray-300"
             >
               Contact
             </button>
           </nav>
         </div>
+        <span className="cursor-pointer" onClick={toggleDarkMode}>
+          {darkMode ? (
+            <IoMdMoon className="w-6 h-6" />
+          ) : (
+            <LuSun className="w-6 h-6" />
+          )}
+        </span>
         <div className="md:hidden">
           <button
             onClick={() => setIsOpen(!isOpen)}

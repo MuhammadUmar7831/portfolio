@@ -1,24 +1,24 @@
 @font-face {
-    font-family: Montserrat;
-    src: url('/font/Montserrat-VariableFont_wght.ttf');
-  }
-  
-  .Montserrat{
-    font-family: Montserrat;
-  }
+  font-family: Montserrat;
+  src: url('/font/Montserrat-VariableFont_wght.ttf');
+}
 
-.txt-color{
+.Montserrat {
+  font-family: Montserrat;
+}
+
+*{
+  @apply transition-colors duration-300
+}
+
+.txt-color {
   @apply text-teal-500
 }
 
-.bg-color{
-  @apply bg-teal-500
-}  
-
-.theme-bg{
-  @apply bg-gray-800
+.dark-theme {
+  @apply text-white
 }
 
-.theme-bg-darker{
-  @apply bg-gray-900
+.light-theme {
+  @apply text-white
 }
