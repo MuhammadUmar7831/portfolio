@@ -32,6 +32,7 @@ const details = [
     ],
     video: "3waglUa5Ako",
     github: "https://github.com/MuhammadUmar7831/eCafe",
+    screenshots: "https://drive.google.com/drive/folders/1M5JoB2spi6cJd-rhs4cp9eqwGAN2QFme?usp=sharing",
     img: [
       "/images/projects/eCafe/1.png",
       "/images/projects/eCafe/2.png",
@@ -70,6 +71,7 @@ const details = [
     ],
     video: "aVRNOz23oSM",
     github: "https://github.com/MuhammadUmar7831/Statistics-Application",
+    screenshots: "https://drive.google.com/drive/folders/1prNU-BGK1r6tnrwCRfEFvfN-eBsqHlHe?usp=drive_link",
     img: [
       "/images/projects/statistics-app/1.png",
       "/images/projects/statistics-app/2.png",
@@ -91,6 +93,7 @@ const details = [
     ],
     video: "VTNwu6_tzDE",
     github: "https://github.com/MuhammadUmar7831/Tournament_Scheduling_System",
+    screenshots: "https://drive.google.com/drive/folders/1i480wfG2Rg0Dc9izAPhhmP16kdEJzGYz?usp=drive_link",
     img: [
       "/images/projects/tournamentSchedulingSystem/1.png",
       "/images/projects/tournamentSchedulingSystem/2.png",

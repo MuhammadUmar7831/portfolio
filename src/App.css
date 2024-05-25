@@ -3,35 +3,47 @@
   src: url('/font/Montserrat-VariableFont_wght.ttf');
 }
 
+@font-face {
+  font-family: Gandhara;
+  src: url('/font/Montserrat-VariableFont_wght.ttf');
+}
+
 .Montserrat {
   font-family: Montserrat;
 }
 
+.Gandhara {
+  font-family: Gandhara;
+}
 
 .txt-color {
-  @apply text-teal-500 dark:text-slate-500
+  @apply text-cyan-500 dark:text-slate-500
+}
+
+.txt-color-hover {
+  @apply hover:text-cyan-500 dark:hover:text-slate-500
 }
 
 .dark-theme {
-  @apply text-white transition-colors duration-300
+  @apply text-white transition-colors duration-500
 }
 
 .light-theme {
-  @apply text-black transition-colors duration-300
+  @apply text-black transition-colors duration-500
 }
 
 .nav {
-  @apply bg-gradient-to-r from-teal-800 to-teal-500 dark:bg-gradient-to-r dark:from-slate-800 dark:to-slate-500
+  @apply bg-gradient-to-r from-cyan-500 to-cyan-100 dark:bg-gradient-to-r dark:from-slate-800 dark:to-slate-500
 }
 
 .dark-bg {
-  @apply bg-slate-200 dark:bg-slate-900
+  @apply bg-cyan-50 dark:bg-slate-900
 }
 
 .light-bg {
-  @apply bg-slate-50 dark:bg-slate-800
+  @apply bg-cyan-50 dark:bg-slate-800
 }
 
 .contrast {
-  @apply bg-slate-100 dark:bg-slate-700
+  @apply bg-white dark:bg-slate-700
 }
