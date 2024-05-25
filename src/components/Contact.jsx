@@ -24,25 +24,31 @@ export default function Contact() {
             <span className="txt-color">Contact</span> Me
           </h1>
         </div>
-        <div className="flex flex-col items-center md:flex-row lg:flex-row my-8">
-          <span className="text-2xl ml-5">
-            <FiPhoneCall />
-          </span>
-          <div className="flex flex-col mx-6">
-            <h1 className="">Phone</h1>
-            <a href="tel:+923020417507" className=" hover:text-teal-500">
-              +92 302 0417 507
-            </a>
+        <div className="flex flex-col md:flex-row my-6">
+          <div className="ml-2 flex items-center mt-2">
+            <span className="text-2xl">
+              <FiPhoneCall />
+            </span>
+            <div className="mx-6">
+              <h1 className="">Phone</h1>
+              <a href="tel:+923020417507" className=" hover:text-teal-500">
+                +92 302 0417 507
+              </a>
+            </div>
           </div>
-
-          <span className="text-2xl ml-10">
-            <HiOutlineMailOpen />
-          </span>
-          <div className="flex flex-col mx-6">
-            <h1 className="">Email</h1>
-            <a href="mailto:mu8494759@gmail.com" className=" hover:text-teal-500">
-              +92 302 0417 507
-            </a>
+          <div className="ml-2 flex items-center mt-2">
+            <span className="text-2xl">
+              <HiOutlineMailOpen />
+            </span>
+            <div className="mx-6">
+              <h1 className="">Email</h1>
+              <a
+                href="mailto:mu8494759@gmail.com"
+                className=" hover:text-teal-500"
+              >
+                mu8494759@gmail.com
+              </a>
+            </div>
           </div>
         </div>
         <div className="flex items-center gap-4 ml-4">
