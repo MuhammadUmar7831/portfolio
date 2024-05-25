@@ -7,20 +7,17 @@
   font-family: Montserrat;
 }
 
-* {
-  @apply transition-colors duration-300
-}
 
 .txt-color {
   @apply text-teal-500 dark:text-slate-500
 }
 
 .dark-theme {
-  @apply text-white
+  @apply text-white transition-colors duration-300
 }
 
 .light-theme {
-  @apply text-white
+  @apply text-black transition-colors duration-300
 }
 
 .nav {
@@ -28,13 +25,13 @@
 }
 
 .dark-bg {
-  @apply bg-teal-900 dark:bg-slate-900
+  @apply bg-slate-200 dark:bg-slate-900
 }
 
 .light-bg {
-  @apply bg-teal-800 dark:bg-slate-800
+  @apply bg-slate-50 dark:bg-slate-800
 }
 
 .contrast {
-  @apply bg-teal-700 dark:bg-slate-700
+  @apply bg-slate-100 dark:bg-slate-700
 }
