@@ -9,7 +9,7 @@ const ProfComponent = () => {
   const { profileRef } = useContext(RefContext);
 
   return (
-    <div className="bg-teal-900 dark:bg-slate-900">
+    <div className="dark-bg">
       <div
         className="flex flex-col gap-8 py-12 max-w-screen-xl mx-auto p-4 md:flex-row lg:flex-row"
         ref={profileRef}
@@ -39,7 +39,7 @@ const ProfComponent = () => {
                 <a
                   target="_blank"
                   href="https://wa.me/923020417507"
-                  className="px-4 py-3 bg-teal-700 dark:bg-slate-700 font-semibold"
+                  className="px-4 py-3 contrast font-semibold"
                 >
                   Let's talk
                 </a>

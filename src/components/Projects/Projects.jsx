@@ -7,7 +7,7 @@ const Projects = () => {
   const { projectsRef } = useContext(RefContext);
   return (
     <>
-      <div className="p-4 bg-teal-900 dark:bg-slate-900" ref={projectsRef}>
+      <div className="p-4 dark-bg" ref={projectsRef}>
         <h1 className="text-3xl text-center mt-4 mb-10">
           My <span className="txt-color">Projects</span>
         </h1>

@@ -17,7 +17,7 @@ export default function Contact() {
   const{ contactRef } = useContext(RefContext)
 
   return (
-    <div className="w-full px-4 py-8 bg-teal-800 dark:bg-slate-800" id="footer" ref={contactRef}>
+    <div className="w-full px-4 py-8 light-bg" id="footer" ref={contactRef}>
       <Slide direction="left">
         <h1 className="text-3xl font-bold mb-4">Contact Information</h1>
         <div className="flex flex-col md:flex-row lg:flex-row mb-8 md:mb-0">

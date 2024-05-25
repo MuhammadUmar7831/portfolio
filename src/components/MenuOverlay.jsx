@@ -14,7 +14,7 @@ export default function MenuOverlay(props){
     }, []);
 
     return (
-        <div className={`fixed top-0 left-0 w-full h-full bg-teal-900 dark:bg-slate-900 flex items-center justify-center z-10 transition-opacity ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
+        <div className={`fixed top-0 left-0 w-full h-full dark-bg flex items-center justify-center z-10 transition-opacity ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
             <div className="text-white text-4xl w-4/5 ">
                 <nav className="flex flex-col space-y-4 text-center Montserrat">
                     <button onClick={handleProfileClick} className="hover:text-gray-300">Profile</button>

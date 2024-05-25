@@ -35,7 +35,7 @@ export default function Navbar(props) {
   };
 
   return (
-    <div className="bg-gradient-to-r from-teal-800 to-teal-500 dark:bg-gradient-to-r dark:from-slate-800 dark:to-slate-500 shadow-md py-6">
+    <div className="nav shadow-md py-6">
       <div className="max-w-7xl mx-auto flex justify-between items-center px-4">
         {/* <div className="flex items-center">
           <h1 className="font-bold text-2xl ml-2 Montserrat">Muhammad Umar</h1>

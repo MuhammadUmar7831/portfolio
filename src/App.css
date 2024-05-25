@@ -7,7 +7,7 @@
   font-family: Montserrat;
 }
 
-*{
+* {
   @apply transition-colors duration-300
 }
 
@@ -21,4 +21,20 @@
 
 .light-theme {
   @apply text-white
+}
+
+.nav {
+  @apply bg-gradient-to-r from-teal-800 to-teal-500 dark:bg-gradient-to-r dark:from-slate-800 dark:to-slate-500
+}
+
+.dark-bg {
+  @apply bg-teal-900 dark:bg-slate-900
+}
+
+.light-bg {
+  @apply bg-teal-800 dark:bg-slate-800
+}
+
+.contrast {
+  @apply bg-teal-700 dark:bg-slate-700
 }
