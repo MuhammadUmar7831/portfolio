@@ -27,7 +27,7 @@ const ProfComponent = () => {
                       strings: ["Muhammad Umar"],
                       speed: 100,
                       waitUntilVisible: true,
-                      loop: true,
+                      // loop: true,
                     }}
                   />
                 </h1>
@@ -36,7 +36,7 @@ const ProfComponent = () => {
                   <span className="txt-color">Web Development</span> as a
                   career. I am also interseted in{" "}
                   <span className="txt-color">AI/ML</span> and currently
-                  studying it. Currently I am a enrolled in BS{" "}
+                  studying it. Currently I am enrolled in BS{" "}
                   <span className="txt-color">Software Engineering</span> at
                   FAST Lahore
                 </p>
