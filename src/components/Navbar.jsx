@@ -94,7 +94,7 @@ export default function Navbar(props) {
                 style={{ backgroundColor: darkMode ? "#333" : "transparent" }}
               ></div>
               <div
-                className="dot absolute left-1 top-1  w-6 h-6 rounded-full transition"
+                className="dot absolute left-1 top-1  w-6 h-6 rounded-full transition-transform"
                 style={{
                   transform: darkMode ? "translateX(100%)" : "translateX(0%)",
                 }}
