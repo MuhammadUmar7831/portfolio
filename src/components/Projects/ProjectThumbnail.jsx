@@ -28,7 +28,7 @@ const ProjectThumbnail = ({ imageSrc, title, description, details }) => {
       >
         {!details.completed && (
           <div class="absolute right-0 top-0 h-16 w-16">
-            <div class="absolute transform rotate-45 bg-green-600 text-center text-white font-semibold py-1 right-[-35px] top-[32px] w-[170px]">
+            <div class="absolute transform rotate-45 bg-green-600 dark:bg-red-600 text-center text-white font-semibold py-1 right-[-35px] top-[32px] w-[170px]">
               in progress
             </div>
           </div>
