@@ -10,7 +10,7 @@ const projects = [
     imageSrc: "/images/projects/statistics-app/thumbnail.jpg",
     title: "Statistics Application",
     description:
-      "This apllication is developed for a trader who trades in Bakery items.",
+      "This web app is designed for wholesale traders. It helps manage orders, suppliers, and products easily. Plus, it provides detailed stats for all orders, making business decisions simpler.",
   },
   {
     id: 3,
