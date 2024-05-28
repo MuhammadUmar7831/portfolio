@@ -7,7 +7,7 @@ const projects = [
   },
   {
     id: 2,
-    imageSrc: "/images/projects/statistics-app/1.png",
+    imageSrc: "/images/projects/statistics-app/thumbnail.jpg",
     title: "Statistics Application",
     description:
       "This apllication is developed for a trader who trades in Bakery items.",
