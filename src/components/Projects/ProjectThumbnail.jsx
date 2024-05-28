@@ -61,7 +61,7 @@ const ProjectThumbnail = ({ imageSrc, title, description, details }) => {
                 href={details.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center text-xs md:text-base lg:text-base px-4 py-2 hover:text-black"
+                className="flex items-center text-xs md:text-base lg:text-base px-4 py-2 hover:text-gray-500"
                 onClick={handleClick}
               >
                 <FiGithub className="mr-2" />
