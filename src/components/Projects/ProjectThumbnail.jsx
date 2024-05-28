@@ -21,7 +21,7 @@ const ProjectThumbnail = ({ imageSrc, title, description, details }) => {
   return (
     <>
       <div
-        className="flex flex-col lg:flex-row relative rounded-xl contrast shadow-md p-4 cursor-pointer overflow-hidden"
+        className="flex flex-col lg:flex-row relative rounded-xl contrast shadow-md p-4 overflow-hidden"
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
         onClick={handleClick}
@@ -55,13 +55,13 @@ const ProjectThumbnail = ({ imageSrc, title, description, details }) => {
                 </div>
               ))}
           </div>
-          <div className="flex mx-auto mt-4">
+          <div className="flex flex-wrap mx-auto mt-4">
             {details.github && (
               <a
                 href={details.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center text-xs md:text-base lg:text-base px-4 py-2 hover:text-gray-500"
+                className="flex items-center mx-auto lg:text-base px-4 py-2 hover:text-gray-500"
                 onClick={handleClick}
               >
                 <FiGithub className="mr-2" />
@@ -73,7 +73,7 @@ const ProjectThumbnail = ({ imageSrc, title, description, details }) => {
                 href={details.liveDemo}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center text-xs md:text-base lg:text-base px-4 py-2 hover:text-blue-600"
+                className="flex items-center mx-auto lg:text-base px-4 py-2 hover:text-blue-600"
                 onClick={handleClick}
               >
                 <FiLink className="mr-2" />
@@ -85,7 +85,7 @@ const ProjectThumbnail = ({ imageSrc, title, description, details }) => {
                 href={details.screenshots}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center text-xs md:text-base lg:text-base px-4 py-2 hover:text-yellow-600"
+                className="flex items-center mx-auto lg:text-base px-4 py-2 hover:text-yellow-500"
                 onClick={handleClick}
               >
                 <FiLink className="mr-2" />
@@ -97,7 +97,7 @@ const ProjectThumbnail = ({ imageSrc, title, description, details }) => {
                 href={`https://www.youtube.com/watch/${details.video}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center text-xs md:text-base lg:text-base px-4 py-2 hover:text-red-600"
+                className="flex items-center mx-auto lg:text-base px-4 py-2 hover:text-red-500"
                 onClick={handleClick}
               >
                 <FiYoutube className="mr-2" />
