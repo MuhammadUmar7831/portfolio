@@ -9,13 +9,22 @@ const projects = [
     id: 2,
     imageSrc: "/images/projects/statistics-app/1.png",
     title: "Statistics Application",
-    description: "This apllication is developed for a trader who trades in Bakery items.",
+    description:
+      "This apllication is developed for a trader who trades in Bakery items.",
   },
   {
     id: 3,
     imageSrc: "/images/projects/tournamentSchedulingSystem/thumbnail.jpeg",
     title: "کھیل",
-    description: "Use this app to schedule your cricket tournament. It also provide points table feature.",
+    description:
+      "Use this app to schedule your cricket tournament. It also provide points table feature.",
+  },
+  {
+    id: 4,
+    imageSrc: "/images/projects/Rehaish/thumbnail.png",
+    title: "Rehasih",
+    description:
+      "Rehaish Code: Crafting a dynamic marketplace for property rentals and sales with MERN stack. Exciting features in progress!",
   },
 ];
 
@@ -32,7 +41,8 @@ const details = [
     ],
     video: "3waglUa5Ako",
     github: "https://github.com/MuhammadUmar7831/eCafe",
-    screenshots: "https://drive.google.com/drive/folders/1M5JoB2spi6cJd-rhs4cp9eqwGAN2QFme?usp=sharing",
+    screenshots:
+      "https://drive.google.com/drive/folders/1M5JoB2spi6cJd-rhs4cp9eqwGAN2QFme?usp=sharing",
     img: [
       "/images/projects/eCafe/1.png",
       "/images/projects/eCafe/2.png",
@@ -59,6 +69,7 @@ const details = [
       "/images/projects/eCafe/23.png",
       "/images/projects/eCafe/24.png",
     ],
+    completed: true,
   },
   {
     id: 2,
@@ -71,7 +82,8 @@ const details = [
     ],
     video: "aVRNOz23oSM",
     github: "https://github.com/MuhammadUmar7831/Statistics-Application",
-    screenshots: "https://drive.google.com/drive/folders/1prNU-BGK1r6tnrwCRfEFvfN-eBsqHlHe?usp=drive_link",
+    screenshots:
+      "https://drive.google.com/drive/folders/1prNU-BGK1r6tnrwCRfEFvfN-eBsqHlHe?usp=drive_link",
     img: [
       "/images/projects/statistics-app/1.png",
       "/images/projects/statistics-app/2.png",
@@ -81,6 +93,7 @@ const details = [
       "/images/projects/statistics-app/6.png",
       "/images/projects/statistics-app/7.png",
     ],
+    completed: true,
   },
   {
     id: 3,
@@ -93,7 +106,8 @@ const details = [
     ],
     video: "VTNwu6_tzDE",
     github: "https://github.com/MuhammadUmar7831/Tournament_Scheduling_System",
-    screenshots: "https://drive.google.com/drive/folders/1i480wfG2Rg0Dc9izAPhhmP16kdEJzGYz?usp=drive_link",
+    screenshots:
+      "https://drive.google.com/drive/folders/1i480wfG2Rg0Dc9izAPhhmP16kdEJzGYz?usp=drive_link",
     img: [
       "/images/projects/tournamentSchedulingSystem/1.png",
       "/images/projects/tournamentSchedulingSystem/2.png",
@@ -108,6 +122,20 @@ const details = [
       "/images/projects/tournamentSchedulingSystem/11.png",
       "/images/projects/tournamentSchedulingSystem/12.png",
     ],
+    completed: true,
+  },
+  {
+    id: 4,
+    technologies: [
+      { name: "MongoDB", image: "/images/technologies/mongodb.png" },
+      { name: "Express Js", image: "/images/technologies/expressjs.png" },
+      { name: "React", image: "/images/technologies/react.png" },
+      { name: "Node js", image: "/images/technologies/nodejs.png" },
+      { name: "Tailwindcss", image: "/images/technologies/tailwindcss.png" },
+      { name: "Redux", image: "/images/technologies/redux.png" },
+    ],
+    github: "https://github.com/MuhammadUmar7831/Rehaish",
+    completed: false,
   },
 ];
 

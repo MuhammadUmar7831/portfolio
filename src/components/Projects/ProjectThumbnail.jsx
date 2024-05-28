@@ -21,11 +21,18 @@ const ProjectThumbnail = ({ imageSrc, title, description, details }) => {
   return (
     <>
       <div
-        className="flex flex-col lg:flex-row relative rounded-xl contrast shadow-md p-4 cursor-pointer"
+        className="flex flex-col lg:flex-row relative rounded-xl contrast shadow-md p-4 cursor-pointer overflow-hidden"
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
         onClick={handleClick}
       >
+        {!details.completed && (
+          <div class="absolute right-0 top-0 h-16 w-16">
+            <div class="absolute transform rotate-45 bg-green-600 text-center text-white font-semibold py-1 right-[-35px] top-[32px] w-[170px]">
+              in progress
+            </div>
+          </div>
+        )}
         <img src={imageSrc} alt={title} className="lg:w-1/2 rounded-xl" />
         <div className="flex flex-col m-4 lg:w-1/2">
           <h2 className="text-center text-lg md:text-lg lg:text-xl font-semibold Gandhara">

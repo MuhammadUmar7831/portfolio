@@ -2,6 +2,7 @@ const technologies = [
     { name: "MongoDB", image: "/images/technologies/mongodb.png" },
     { name: "Express Js", image: "/images/technologies/expressjs.png" },
     { name: "React", image: "/images/technologies/react.png" },
+    { name: "Redux", image: "/images/technologies/redux.png" },
     { name: "Node js", image: "/images/technologies/nodejs.png" },
     { name: "Tailwindcss", image: "/images/technologies/tailwindcss.png" },
     { name: "MySQL", image: "/images/technologies/mysql.png" },
