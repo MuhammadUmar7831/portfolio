@@ -24,7 +24,7 @@ const projects = [
     imageSrc: "/images/projects/Rehaish/thumbnail.png",
     title: "Rehasih",
     description:
-      "Rehaish Code: Crafting a dynamic marketplace for property rentals and sales with MERN stack. Exciting features in progress!",
+      "Rehaish: Crafting a dynamic marketplace for property rentals and sales with MERN stack. Exciting features in progress!",
   },
 ];
 
