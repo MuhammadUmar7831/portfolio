@@ -37,7 +37,7 @@
 }
 
 .menu-overlay{
-  @apply bg-cyan-500
+  @apply bg-cyan-500 dark:bg-zinc-900
 }
 
 .dark-bg {
