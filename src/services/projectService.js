@@ -135,6 +135,7 @@ const details = [
       { name: "Redux", image: "/images/technologies/redux.png" },
     ],
     github: "https://github.com/MuhammadUmar7831/Rehaish",
+    liveDemo: "https://rehaish.vercel.app/",
     completed: false,
   },
 ];
