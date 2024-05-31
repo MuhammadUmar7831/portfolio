@@ -64,12 +64,8 @@ const ProfComponent = () => {
           </Slide>
         </div>
         <Zoom>
-          <div className="flex transition-transform duration-700 ease-in">
-            <img
-              src="/images/bannerUser.png"
-              alt="profile"
-              className="w-full"
-            />
+          <div className="relative transition-transform duration-700 ease-in w-2/3 mx-auto rounded-full overflow-hidden">
+            <img src="/images/me.png" alt="profile" className="w-full" />
           </div>
         </Zoom>
       </div>
