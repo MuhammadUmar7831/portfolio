@@ -70,6 +70,18 @@ const details = [
       "/images/projects/eCafe/24.png",
     ],
     completed: true,
+    contributors: [
+      {
+        name: "Huzaifa",
+        image: "https://avatars.githubusercontent.com/u/124560775?v=4",
+        link: "https://github.com/HuzaifaRizwan1231",
+      },
+      {
+        name: "Daniyal",
+        image: "https://avatars.githubusercontent.com/u/144957322?v=4",
+        link: "https://github.com/D-Soft08",
+      },
+    ],
   },
   {
     id: 2,

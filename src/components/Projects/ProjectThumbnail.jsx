@@ -34,6 +34,7 @@ const ProjectThumbnail = ({ imageSrc, title, description, details }) => {
           </div>
         )}
         <img src={imageSrc} alt={title} className="lg:w-1/2 rounded-xl" />
+
         <div className="flex flex-col m-4 lg:w-1/2">
           <h2 className="text-center text-lg md:text-lg lg:text-xl font-semibold Gandhara">
             {title}
@@ -55,6 +56,27 @@ const ProjectThumbnail = ({ imageSrc, title, description, details }) => {
                 </div>
               ))}
           </div>
+          {details.contributors && (
+            <div>
+              <h1 className="text-center font-semibold mb-2">Contributor(s)</h1>
+              <div className="flex justify-center gap-5 my-2">
+                {details.contributors.map((contributor, index) => (
+                  <>
+                    <div className="w-16 h-16">
+                      <a href={contributor.link} target="_blank">
+                        <img
+                          className="rounded-full overflow-hidden"
+                          src={contributor.image}
+                          alt={contributor.name}
+                        />
+                      </a>
+                      <span>{contributor.name}</span>
+                    </div>
+                  </>
+                ))}
+              </div>
+            </div>
+          )}
           <div className="flex flex-wrap mx-auto mt-4">
             {details.github && (
               <a
