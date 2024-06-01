@@ -1,7 +1,7 @@
 const projects = [
   {
     id: 1,
-    imageSrc: "/images/projects/eCafe/1.png",
+    imageSrc: "/images/projects/eCafe/thumbnail.jpeg",
     title: "eCafé",
     description: "Online store to order eatables for a local café",
   },
