@@ -12,7 +12,7 @@ import DarkMode from "./components/DarkMode";
 import Menu from "./components/Menu";
 
 function App() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
   return (
     <>
       <RefProvider>
