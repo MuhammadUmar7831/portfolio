@@ -8,6 +8,8 @@ import { RefProvider } from "./context/RefContext";
 import AnimatedCursor from "react-animated-cursor";
 
 import "./App.css";
+import DarkMode from "./components/DarkMode";
+import Menu from "./components/Menu";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -33,7 +35,9 @@ function App() {
             darkMode ? "dark dark-theme" : "light-theme"
           }`}
         >
-          <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
+          {/* <Navbar darkMode={darkMode} setDarkMode={setDarkMode} /> */}
+          {/* <DarkMode darkMode={darkMode} setDarkMode={setDarkMode} /> */}
+          <Menu />
           <ProfComponent />
           <Technologies />
           <Projects />
